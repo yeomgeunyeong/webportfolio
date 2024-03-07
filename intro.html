@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="6; url=http://nyeong.dothome.co.kr/webportfolio/">
+    <title>PORTFOLIO</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+        .fugaz-one-regular {
+            font-family: "Fugaz One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        } 
+
+        body{
+            background-color: #242525;
+        }
+
+        .loading{
+            width: 100%;
+            height: 100%;
+        }
+
+        svg{
+            font-family: "Fugaz One", sans-serif;
+            font-size: 140px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-transform: uppercase;
+            animation: stroke 5s 1 alternate;
+            /* fill: rgba(72,138,204,1); */
+            fill: rgba(52, 201, 33);
+        }
+
+        @keyframes stroke {
+            0%{
+                stroke-dashoffset: 25%;
+                stroke-dasharray: 0 50%;
+                fill: rgba(72,138,204,0);
+                stroke: rgb(52, 201, 33);
+                stroke-width: 2;
+            }
+            70%{
+                fill: rgba(72,138,204,0);
+                stroke: rgba(52, 201, 33);
+            }
+            80%  {
+                fill: rgba(72,138,204,0);
+                /* stroke: rgba(54,95,160,1); */
+                stroke: rgba(52, 201, 33);
+            }
+            100% {
+                stroke-dashoffset: -25%;
+                stroke-dasharray: 50% 0;
+                fill: rgba(52, 201, 33);
+                stroke: rgba(54,95,160,0);
+                stroke-width: 0;
+            }
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src='https://unpkg.com/gsap@3/dist/TextPlugin.min.js'></script>
+</head>
+<body>
+    <div class="loading">
+        <div class="load_txt">
+            <svg viewBox="0 0 1320 300">
+                <text x="50%" y="50%" dy="40px" text-anchor="middle">PORTFOLIO</text>
+            </svg>
+        </div><!-- load_txt -->
+    </div><!-- loading -->
+</body>
+</html>
